@@ -12,7 +12,8 @@ if ($headers['X-Hub-Signature-256'] ?? false) {
 }
 
 $output = [];
-exec('cd /home/zydebnwqs4su/git-repo-path && git pull 2>&1', $output);
-file_put_contents('/home/zydebnwqs4su/deploy.log', implode("\n", $output), FILE_APPEND);
+exec('cd /home/zydebnwqs4su/public_html/application.chedro12.com  && git pull 2>&1', $output);
+file_put_contents('/home/zydebnwqs4su/public_html/application.chedro12.com/deploy.log', implode("\n", $output), FILE_APPEND);
 echo "Deployed.";
 ?>
+
