@@ -1,0 +1,7 @@
+# .htaccess example
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+# Basic default index file
+DirectoryIndex index.html index.php
