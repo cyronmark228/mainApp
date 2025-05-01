@@ -1,4 +1,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/zydebnwqs4su/public_html/application.chedro12.com
-    - /bin/cp -r * $DEPLOYPATH
+    - /bin/rsync -av --exclude='.git' . $DEPLOYPATH
+
+    
